@@ -6,6 +6,7 @@ import { faSave, faTrashCan } from "@fortawesome/free-solid-svg-icons"
 import useAuth from "../../hooks/useAuth"
 
 const EditNoteForm = ({ note, users }) => {
+
     const { isManager, isAdmin } = useAuth()
 
     const [updateNote, {
@@ -74,6 +75,7 @@ const EditNoteForm = ({ note, users }) => {
     const validTextClass = !text ? "form__input--incomplete" : ''
 
     const errContent = (error?.data?.message || delerror?.data?.message) ?? ''
+
 
     let deleteButton = null
     if (isManager || isAdmin) {

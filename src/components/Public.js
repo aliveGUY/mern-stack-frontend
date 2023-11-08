@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 const Public = () => {
     const content = (
@@ -21,8 +21,8 @@ const Public = () => {
                 <Link to="/login">Employee Login</Link>
             </footer>
         </section>
+
     )
     return content
 }
-
 export default Public
